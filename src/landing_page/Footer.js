@@ -6,7 +6,7 @@ function Footer() {
     <div className="container border-top mt-5 pt-4">
       <div className="row">
         <div className="col-lg-3 col-md-6 col-sm-12">
-          <img src="media/images/logo.svg" alt="logo" style={{ width: "50%" }} />
+          <img src="media/images/stockgrow.png" alt="logo"  />
           <p className="text-muted small">© 2024 - 2025, StockGrow Broking Ltd. All rights reserved.</p>
         </div>
 
