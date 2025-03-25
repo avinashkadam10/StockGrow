@@ -3,118 +3,101 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="container border-top mt-5">
-      <div className="row mt-5">
-        <div className="col">
-          <img
-            src="media/images/logo.svg"
-            alt="logo"
-            style={{ width: "50%" }}
-          />
-          <p className="text-muted">© 2024 - 2025, StockGrow Broking Ltd. All rights reserved.</p>
+    <div className="container border-top mt-5 pt-4">
+      <div className="row">
+        <div className="col-lg-3 col-md-6 col-sm-12">
+          <img src="media/images/logo.svg" alt="logo" style={{ width: "50%" }} />
+          <p className="text-muted small">© 2024 - 2025, StockGrow Broking Ltd. All rights reserved.</p>
         </div>
-        <div className="col">
+
+        <div className="col-lg-3 col-md-6 col-sm-12">
           <p className="fs-5 fw-bold">Company</p>
-          <Link to="about" className="footer-link text-primary">About</Link>
-          <br></br>
-          <Link to="product" className="footer-link text-primary">Products</Link>
-          <br></br>
-          <Link to="pricing" className="footer-link text-primary">Pricing</Link>
-          <br></br>
-          <a href="#" className="footer-link text-primary">Referral programme</a> 
-          <br></br>
-          <a href="#" className="footer-link text-primary">Careers</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">StockGrow.tech</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">Press & media</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">StockGrow Cares (CSR)</a>
-          <br></br>
+          <ul className="list-unstyled">
+            <li><Link to="about" className="text-primary text-decoration-none">About</Link></li>
+            <li><Link to="product" className="text-primary text-decoration-none">Products</Link></li>
+            <li><Link to="pricing" className="text-primary text-decoration-none">Pricing</Link></li>
+            <li><a href="#" className="text-primary text-decoration-none">Referral Programme</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">Careers</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">StockGrow.tech</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">Press & Media</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">StockGrow Cares (CSR)</a></li>
+          </ul>
         </div>
-        <div className="col">
+
+        <div className="col-lg-3 col-md-6 col-sm-12">
           <p className="fs-5 fw-bold">Support</p>
-          <a href="#" className="footer-link text-primary">Contact us</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">Support portal</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">S-Connect blog</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">List of charges</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">Downloads & resources</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">Videos</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">Market overview</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">How to file a complaint?</a>
-          <br></br>
-          <a href="#" className="footer-link text-primary">Status of your complaints</a>
-          <br></br>
+          <ul className="list-unstyled">
+            <li><a href="#" className="text-primary text-decoration-none">Contact Us</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">Support Portal</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">S-Connect Blog</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">List of Charges</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">Downloads & Resources</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">Videos</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">Market Overview</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">How to File a Complaint?</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">Status of Your Complaints</a></li>
+          </ul>
         </div>
-        <div className="col">
-          <p className="fs-5 fw-bold"> Account</p>
-          <a href="#" className="footer-link text-primary">Open an account</a> 
-          <br></br>
-          <a href="#" className="footer-link text-primary">Fund transfer</a>
-          <br></br>
+
+        <div className="col-lg-3 col-md-6 col-sm-12">
+          <p className="fs-5 fw-bold">Account</p>
+          <ul className="list-unstyled">
+            <li><a href="#" className="text-primary text-decoration-none">Open an Account</a></li>
+            <li><a href="#" className="text-primary text-decoration-none">Fund Transfer</a></li>
+          </ul>
         </div>
       </div>
-      <div className="mt-5 text-muted" style={{fontSize:"12px"}}>
-      <p>
-        StockGrow Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
-        no.: INZ000031633 CDSL/NSDL: Depository services through StockGrow Broking
-        Ltd. – SEBI Registration no.: IN-DP-431-2024 Commodity Trading through
-        StockGrow Commodities Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI Registration
-        no.: INZ000038238 Registered Address: StockGrow Broking Ltd., #153/154,
-        4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th
-        Phase, Bengaluru - 560078, Karnataka, India. For any complaints
-        pertaining to securities broking please write to complaints@StockGrow.com,
-        for DP related to dp@StockGrow.com. Please ensure you carefully read the
-        Risk Disclosure Document as prescribed by SEBI | ICF
-      </p>
 
-      <p>
-        Procedure to file a complaint on SEBI SCORES: Register on SCORES portal.
-        Mandatory details for filing complaints on SCORES: Name, PAN, Address,
-        Mobile Number, E-mail ID. Benefits: Effective Communication, Speedy
-        redressal of the grievances
-      </p>
+      {/* Legal Disclaimer Section */}
+      <div className="mt-5 text-muted small" style={{ lineHeight: "1.5" }}>
+        <p>
+          <strong>StockGrow Broking Ltd.</strong>: Member of NSE, BSE & MCX – SEBI Registration no.: INZ000031633
+          CDSL/NSDL: Depository services through StockGrow Broking Ltd. – SEBI Registration no.: IN-DP-431-2024
+          Commodity Trading through StockGrow Commodities Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI Registration
+          no.: INZ000038238. Registered Address: StockGrow Broking Ltd., #153/154, 4th Cross, Dollars Colony,
+          Opp. Clarence Public School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India.
+        </p>
 
-      <p>Smart Online Dispute Resolution | Grievances Redressal Mechanism</p>
+        <p>
+          For any complaints regarding securities broking, please email: <a href="mailto:complaints@StockGrow.com">complaints@StockGrow.com</a>.
+          For DP-related complaints, contact: <a href="mailto:dp@StockGrow.com">dp@StockGrow.com</a>.
+        </p>
 
-      <p>
-        Investments in securities market are subject to market risks; read all
-        the related documents carefully before investing.
-      </p>
+        <p>
+          <strong>Procedure to file a complaint on SEBI SCORES:</strong> Register on the 
+          <a href="https://scores.gov.in/" target="_blank" rel="noopener noreferrer"> SCORES portal</a>.
+          Required details: Name, PAN, Address, Mobile Number, Email ID.
+        </p>
 
-      <p>
-        Attention investors: 1) Stock brokers can accept securities as margins
-        from clients only by way of pledge in the depository system w.e.f
-        September 01, 2024. 2) Update your e-mail and phone number with your
-        stock broker / depository participant and receive OTP directly from
-        depository on your e-mail and/or mobile number to create pledge. 3)
-        Check your securities / MF / bonds in the consolidated account statement
-        issued by NSDL/CDSL every month.
-      </p>
+        <p>Smart Online Dispute Resolution | Grievance Redressal Mechanism</p>
 
-      <p>
-        "Prevent unauthorised transactions in your account. Update your mobile
-        numbers/email IDs with your stock brokers. Receive information of your
-        transactions directly from Exchange on your mobile/email at the end of
-        the day. Issued in the interest of investors. KYC is one time exercise
-        while dealing in securities markets - once KYC is done through a SEBI
-        registered intermediary (broker, DP, Mutual Fund etc.), you need not
-        undergo the same process again when you approach another intermediary."
-        Dear Investor, if you are subscribing to an IPO, there is no need to
-        issue a cheque. Please write the Bank account number and sign the IPO
-        application form to authorize your bank to make payment in case of
-        allotment. In case of non allotment the funds will remain in your bank
-        account. As a business we don't give stock tips, and have not authorized
-        anyone to trade on behalf of others. If you find anyone claiming to be
-        part of StockGrow and offering such services, please create a ticket here.
-      </p>
+        <p>
+          <strong>Investment Warning:</strong> Investments in the securities market are subject to market risks;
+          read all related documents carefully before investing.
+        </p>
+
+        <p>
+          <strong>Investor Alerts:</strong> Stock brokers can accept securities as margins only via the pledge system 
+          in the depository system (effective from September 01, 2024). Update your contact details with your 
+          stock broker/depository participant to receive OTP verification. Review your securities in the consolidated 
+          account statement issued by NSDL/CDSL monthly.
+        </p>
+
+        <p>
+          <strong>Prevent Unauthorized Transactions:</strong> Update your mobile number and email with your stock broker.
+          Get transaction details from the Exchange at the end of the day. KYC is a one-time process across all SEBI-registered 
+          intermediaries (brokers, DPs, Mutual Funds, etc.).
+        </p>
+
+        <p>
+          <strong>IPO Subscription:</strong> No need to issue a cheque. Authorize your bank via the IPO application form.
+          If allotment is not received, funds remain in your bank account. 
+        </p>
+
+        <p>
+          As a business, we <strong>do not provide stock tips</strong> or authorize trading on behalf of others. If someone 
+          claims to be from StockGrow offering such services, please report it.
+        </p>
       </div>
     </div>
   );

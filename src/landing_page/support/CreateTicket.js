@@ -1,163 +1,92 @@
 import React from "react";
 
+const ticketCategories = [
+  {
+    title: "Account Opening",
+    icon: "fa-circle-plus",
+    links: [
+      "Resident individual",
+      "Minor",
+      "Non Resident Indian (NRI)",
+      "Company, Partnership, HUF and LLP",
+      "Glossary",
+    ],
+  },
+  {
+    title: "Your StockGrow Account",
+    icon: "fa-user",
+    links: [
+      "Your Profile",
+      "Account modification",
+      "Client Master Report (CMR) and Depository Participant (DP)",
+      "Nomination",
+      "Transfer and conversion of securities",
+    ],
+  },
+  {
+    title: "Kite",
+    icon: "fa-signal",
+    links: [
+      "IPO",
+      "Trading FAQs",
+      "Margin Trading Facility (MTF) and Margins",
+      "Charts and orders",
+      "Alerts and Nudges",
+    ],
+  },
+  {
+    title: "Funds",
+    icon: "fa-money-check",
+    links: ["Add money", "Withdraw money", "Add bank accounts", "eMandates"],
+  },
+  {
+    title: "Console",
+    icon: "fa-circle-notch",
+    links: [
+      "Portfolio",
+      "Corporate actions",
+      "Funds statement",
+      "Reports",
+      "Profile",
+    ],
+  },
+  {
+    title: "Coin",
+    icon: "fa-coins",
+    links: [
+      "Understanding mutual funds and Coin",
+      "Coin app",
+      "Coin web",
+      "Transactions and reports",
+      "National Pension Scheme (NPS)",
+    ],
+  },
+];
+
 function CreateTicket() {
   return (
-    <div className="container">
+    <div className="container mt-5">
+      <h2 className="text-muted mb-4 text-center">
+        To create a ticket, select a relevant topic
+      </h2>
       <div className="row">
-        <h2 className="text-muted mb-5">
-          To create a ticket, select a relevant topic
-        </h2>
-        <div className="col-4 mb-5">
-          <h5 className="mb-3">
-            <i class="fa-solid fa-circle-plus"></i> Account Opening
-          </h5>
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-            Resident individual
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-            Minor
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-            Non Resident Indian (NRI)
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-            Company, Partnership, HUF and LLP
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-            Glossary
-          </a>
-          <br />
-        </div>
-        <div className="col-4 mb-5">
-          <h5 className="mb-3">
-          <i class="fa-solid fa-user"></i> Your StockGrow Account
-
-          </h5>
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Your Profile
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Account modification
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Client Master Report (CMR) and Depository Participant (DP)
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Nomination
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Transfer and conversion of securities
-          </a>
-          <br />
-        </div>
-        <div className="col-4">
-          <h5 className="mb-3">
-          <i class="fa-solid fa-signal"></i> Kite
-          </h5>
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          IPO
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Trading FAQs
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Margin Trading Facility (MTF) and Margins
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Charts and orders
-            </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Alerts and Nudges
-          </a>
-          <br />
-        </div>
-        <div className="col-4">
-          <h5 className="mb-3">
-          <i class="fa-solid fa-money-check"></i>  Funds
-          </h5>
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Add money
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Withdraw money
-
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Add bank accounts
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          eMandates
-          </a>
-          <br />
-          
-          <br />
-        </div>
-        <div className="col-4">
-          <h5 className="mb-3">
-          <i class="fa-solid fa-circle-notch"></i> Console
-          </h5>
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Portfolio
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Corporate actions
-
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Funds statement
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Reports
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Profile
-
-          </a>
-          <br />
-        </div>
-        <div className="col-4">
-          <h5 className="mb-3">
-          <i class="fa-solid fa-coins"></i>  Coin
-
-          </h5>
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Understanding mutual funds and Coin          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Coin app
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Coin web          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          Transactions and reports
-          </a>
-          <br />
-          <a href="#" style={{ textDecoration: "none", lineHeight: "1.8em" }}>
-          National Pension Scheme (NPS)
-          </a>
-          <br />
-        </div>
+        {ticketCategories.map((category, index) => (
+          <div key={index} className="col-md-4 col-sm-6 col-12 mb-4">
+            <h5 className="mb-3">
+              <i className={`fa-solid ${category.icon} me-2`}></i>
+              {category.title}
+            </h5>
+            <ul className="list-unstyled">
+              {category.links.map((link, idx) => (
+                <li key={idx}>
+                  <a href="#" className="text-decoration-none d-block">
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </div>
   );
